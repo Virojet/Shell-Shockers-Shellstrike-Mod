@@ -10,6 +10,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.1-0E7697?style=flat-square)](./Shell-Shockers-Shellstrike-Mod.user.js)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
+[![installs](https://abacus.jasoncameron.dev/get/virojet-shellstrike/installs/shield?text=installs&style=flat-square)](https://abacus.jasoncameron.dev/get/virojet-shellstrike/installs)
 
 </div>
 
