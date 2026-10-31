@@ -1,0 +1,6 @@
+const L=require('../smoke-logo-parallel-checks/home-lib.cjs'),fs=require('fs'),path=require('path');
+(async()=>{const h=await L.open({file:'none',out:__dirname,label:'kill-discovery'});try{
+ await L.home(h);await L.createRoom(h,true);await h.page.waitForFunction(()=>window.P?.scene?.spriteManagers?.some(m=>m.sprites?.length===100),null,{timeout:60000});
+ const r=await h.ev(()=>{const sc=window.P.scene;return sc.spriteManagers.map(m=>{const c=m.texture?.getContext?.();const cells=[130,131,132,133,134].map(n=>{if(!c)return null;const d=c.getImageData(n%16*128,(15-Math.floor(n/16))*128,128,128).data;let count=0;for(let i=3;i<d.length;i+=4)if(d[i]>8)count++;return[n,count];});return{count:m.sprites.length,cells:[...new Set(m.sprites.map(s=>s.cellIndex))].slice(0,10),blend:m.blendMode,cell:[m.cellWidth,m.cellHeight],getSprite:typeof m.getSprite,scene:m.scene===sc,canvas:c&&[c.canvas.width,c.canvas.height],alpha:cells};});});
+ console.log(JSON.stringify(r,null,2));console.log('ERRORS',JSON.stringify(h.R.pageErrors));fs.writeFileSync(path.join(__dirname,'discovery.json'),JSON.stringify(r,null,2));
+ }finally{await h.browser.close();}})().catch(e=>{console.error(e.stack);process.exitCode=1;});

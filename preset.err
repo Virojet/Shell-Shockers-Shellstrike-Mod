@@ -1,0 +1,3 @@
+page.waitForFunction: Timeout 120000ms exceeded.
+    at Object.createRoom (C:\Users\ltgre\OneDrive\Desktop\Workspace\Better Hud Mod\test-build\smoke-logo-parallel-checks\home-lib.cjs:75:16)
+    at C:\Users\ltgre\OneDrive\Desktop\Workspace\Better Hud Mod\test-build\shellstrike-kill-logo\async C:\Users\ltgre\OneDrive\Desktop\Workspace\Better Hud Mod\test-build\shellstrike-kill-logo\test_preset.cjs:9:2

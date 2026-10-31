@@ -1,0 +1,4 @@
+PASS preset starts automatically
+PASS no settings, upload control or settings API
+PASS no persistent preset storage
+PASS 77 domains and local-only update metadata
