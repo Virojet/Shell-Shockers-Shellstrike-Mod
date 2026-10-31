@@ -1,6 +1,0 @@
-INFO native game classes   {"engine":"ThinEngine","sprites":1100,"unusedCells":300,"size":1}
-PASS preset starts automatically
-PASS no settings, upload control or settings API
-PASS no persistent preset storage
-PASS 77 domains and local-only update metadata
-FAIL activates on unused native sprites   {"running":true,"ready":true,"active":false,"managers":0,"textureCopies":0,"paused":true,"issue":"The smoke cell property changed.","preset":"Shellstrike"}
