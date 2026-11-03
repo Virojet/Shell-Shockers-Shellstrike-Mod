@@ -8,7 +8,7 @@
 
 [![Install Shellstrike](https://img.shields.io/badge/Install_Shellstrike-one_click-2ea44f?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://raw.githubusercontent.com/Virojet/Shell-Shockers-Shellstrike-Mod/main/Shell-Shockers-Shellstrike-Mod.user.js)
 
-[![Version](https://img.shields.io/badge/version-1.0.1-0E7697?style=flat-square)](./Shell-Shockers-Shellstrike-Mod.user.js) [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE) [![installs](https://abacus.jasoncameron.dev/get/virojet-shellstrike/installs/shield?text=installs&style=flat-square)](https://abacus.jasoncameron.dev/get/virojet-shellstrike/installs)
+[![Version](https://img.shields.io/badge/version-1.0.2-0E7697?style=flat-square)](./Shell-Shockers-Shellstrike-Mod.user.js) [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE) [![Installs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fabacus.jasoncameron.dev%2Fget%2Fvirojet-shellstrike%2Finstalls&query=%24.value&label=installs&color=2ea44f&style=flat-square)](#privacy)
 
 </div>
 
@@ -49,12 +49,16 @@ Switch the script off in Tampermonkey and reload the game. Either way the game's
 
 ## Privacy
 
-- **Nothing is sent anywhere.** The script makes no network requests at all, not even an install count.
+- **Install counter:** The script sends a request to the third-party Abacus counter the first time it runs on a game-site origin, and stores a local marker after a successful response. The request omits credentials and the referring URL; the service can receive your IP address as part of the connection. The count is an estimate, not a verified number of people or installations. Clearing site data or using another game domain can count again; blocked requests may not be counted. Earlier failed attempts may have been marked as counted by older versions.
 - **Your logo** is embedded in the script's assets and rendered locally in your browser.
 
 ## Changelog
 
-#### v1.0.1 — current
+#### v1.0.2 — current
+
+- Fixed install counter retries and matched the badge to the other mod badges.
+
+#### v1.0.1
 
 - Fixed blast smoke, yolk bursts and shell fragments all showing the Shellstrike logo consistently.
 
